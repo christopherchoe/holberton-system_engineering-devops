@@ -1,6 +1,6 @@
 0 script to print absolute path name of current working directory
 
-1 
+1 script to display contents of current directory
 
 2
 
