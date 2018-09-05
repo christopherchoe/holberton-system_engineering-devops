@@ -14,11 +14,11 @@
 
 7 script to move file betty from tmp to tmp/holberton
 
-8
+8 script to delete file betty
 
-9
+9 script to delete directory holberton
 
-10
+10 
 
 11
 
