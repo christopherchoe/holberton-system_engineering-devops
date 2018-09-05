@@ -22,11 +22,11 @@
 
 11 script to list all files in long format in cd, previous directory, and /boot
 
-12 
+12 script to print file of iamafile in /tmp
 
-13
+13 creates symbolic link to /bin/ls in cd
 
-14
+14 
 
 15
 
