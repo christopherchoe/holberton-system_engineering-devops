@@ -10,9 +10,9 @@
 
 5 script to display cd contents in long format, numerically, with hidden files
 
-6 
+6 script to create directory holberton in /tmp 
 
-7
+7 script to move file betty from tmp to tmp/holberton
 
 8
 
