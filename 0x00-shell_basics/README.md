@@ -18,11 +18,11 @@
 
 9 script to delete directory holberton
 
-10 
+10 script to change working directory to previous one 
 
-11
+11 script to list all files in long format in cd, previous directory, and /boot
 
-12
+12 
 
 13
 
