@@ -2,15 +2,15 @@
 
 1 script to display contents of current directory
 
-2
+2 script to change working diretory to user's home directory
 
-3
+3 script to display current directory contents in long format
 
-4
+4 same script as 3 but add hidden files as well
 
-5
+5 script to display cd contents in long format, numerically, with hidden files
 
-6
+6 
 
 7
 
