@@ -26,12 +26,12 @@
 
 13 creates symbolic link to /bin/ls in cd
 
-14 
+14 script to copy all html files 
 
-15
+15 script to move all files with an upper case beginning to /tmp/u
 
-16
+16 script to delete files that end with ~
 
-17
+17 script to create a tree of directories
 
-18
+18 script to list all files and directories of current directory
