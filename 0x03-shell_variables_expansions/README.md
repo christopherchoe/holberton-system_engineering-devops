@@ -39,5 +39,18 @@ And
 File|Task
 ---|---
 0-alias | Script to create an alias 'ls' = rm\*
-
+1-hello_you | Script to say hello user
+10-love_exponent_breath | Script to display the variable breath to the power of variable love.
+11-binary_to_decimal | Script to convert a variable in binary to decimal.
+12-combinations | Script to print possible combinations of letters in the alphabets in twos, sorted and without "oo".
+13-print_float | Script to print a variable with 2 decimal points.
+14-decimal_to_hexadecimal | Script to convert a decimal to hexadecimal.
+2-path | Script to add a path /action to the $PATH environmental variable.
+3-paths | Script to print the amount of directories listed in the $PATH variable.
+4-global_variables | Script to print the global variables.
+5-local_variables | Script to print all local variables, environment variables, and functions.
+6-create_local_variable | Script to create a local variable Betty with value Holberton.
+7-create_global_variable | Script to create a global variable HOLBERTON with value Betty.
+8-true_knowledge | Script to print sum of 128 and the value stored in variable TRUEKNOWLEDGE.
+9-divide_and_rule | Script to print results of POWER divided by DIVIDE.
 
