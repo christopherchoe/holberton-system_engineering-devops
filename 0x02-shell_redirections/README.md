@@ -23,7 +23,9 @@ Other man pages
 * What is the /etc/passwd file and what is its format
 * What is the /etc/shadow file and what is its format
 
---|---
+---
+File | Task
+---|---
 0-hello_world | Script to print "Hello, World" and new line.
 1-confused_smiley | Script to print a smiley with certain special characters.
 10-no_more_js | Script to delete .js files including those in subdirectories but not including directories that end in .js.
