@@ -1,0 +1,2 @@
+#!/bin/bash
+find *.gif -depth -type f | rev | cut -d / -f 1 | rev | sort -t '\0'
