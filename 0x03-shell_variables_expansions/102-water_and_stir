@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(($(echo “obase=behlnort;ibase=water,$WATER | bc)+(echo “obase=behlnort;ibase=stir;$STIR | bc) | bc))
+echo $(($(echo “obase=behlnort;ibase=water,$WATER | bc)+(echo “obase=behlnort;ibase=stir;$STIR | bc)))
