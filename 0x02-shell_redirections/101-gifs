@@ -1,2 +1,2 @@
 #!/bin/bash
-find {.,}*.gif -depth -type f | rev | cut -d / -f 1 | rev | sort -t '\0'
+find {.,} -type f -name *.gif -printf %f | rev | cut --complement -c4 | rev | LC_ALL=C sort
