@@ -9,7 +9,7 @@ do
 	elif [ $((COUNTER % 3)) -ne 0 ] && [ $((COUNTER % 5)) -eq 0 ]
 	then
 		echo "Buzz"
-	elif [ $((COUNTER % 3)) -eq 0 ] && [ $(COUNTER % 5)) -eq 0 ]
+	elif [ $((COUNTER % 3)) -eq 0 ] && [ $((COUNTER % 5)) -eq 0 ]
 	then
 		echo "FizzBuzz"
 	else
