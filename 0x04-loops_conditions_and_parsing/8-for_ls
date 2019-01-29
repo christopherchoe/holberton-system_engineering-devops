@@ -3,6 +3,6 @@
 for i in *;do
 	if [ "$i" != "*" ]
 	then
-		echo "$i" | cut --complement -f1 -d "-" ;
+		echo "$i" | cut -f2 -d "-" ;
 	fi
 done
