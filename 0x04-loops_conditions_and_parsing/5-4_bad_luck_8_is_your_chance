@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-# Display Holberton School 10 times, with bad luck on the 4th good on 8th
+# Holberton School 10 times, with bad luck on the 4th good on 8th
 COUNTER=0
 while [ $COUNTER -lt 10 ];do
-	echo "Holberton School"
 	if [ $COUNTER -eq 3 ]
 	then
 		echo "bad luck"
-	fi
-	if [ $COUNTER -eq 7 ]
+	elif [ $COUNTER -eq 7 ]
 	then
 		echo "good luck"
+	else
+		echo "Holberton School"
 	fi
 	let COUNTER=COUNTER+1
 done
