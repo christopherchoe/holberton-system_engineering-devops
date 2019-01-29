@@ -1,0 +1,2 @@
+#!/bin/bash
+tail --line=+2 | tr "\t" " " | cut -d " " -f 1 | sort | uniq -c | sort -r -n | head -11 | cut --complement -c-8 
