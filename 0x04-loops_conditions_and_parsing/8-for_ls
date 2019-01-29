@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# displays list of files in directory after first dash
+for i in $( ls . );
+do echo "$i" | cut --complement -f1 -d "-" ;
+done
