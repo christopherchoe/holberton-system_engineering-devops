@@ -3,13 +3,13 @@
 COUNTER=1
 while [ "$COUNTER" -lt 101 ];
 do
-	if [ $(($COUNTER % 3)) -eq 0 ] && [ $(($COUNTER % 5)) -ne 0 ]
+	if [ $((COUNTER % 3)) -eq 0 ] && [ $((COUNTER % 5)) -ne 0 ]
 	then
 		echo "Fizz"
-	elif [ $(($COUNTER % 3)) -ne 0 ] && [ $(($COUNTER % 5)) -eq 0 ]
+	elif [ $((COUNTER % 3)) -ne 0 ] && [ $((COUNTER % 5)) -eq 0 ]
 	then
 		echo "Buzz"
-	elif [ $(($COUNTER % 3)) -eq 0 ] && [ $(($COUNTER % 5)) -eq 0 ]
+	elif [ $((COUNTER % 3)) -eq 0 ] && [ $(COUNTER % 5)) -eq 0 ]
 	then
 		echo "FizzBuzz"
 	else
