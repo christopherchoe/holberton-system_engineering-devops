@@ -40,3 +40,10 @@
 * Read your /etc/profile, /etc/inputrc and ~/.bashrc files.
 * Look at some files in the /etc/profile.d directory.
 * Man or help: printenv, set, unset, export, alias, unalias, ., source, printf and previously learned commands.
+
+### 0x04. Loops, conditions and parsing
+* [Loops Samples](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_01.html)
+* [Variable assignment and arithmetic](http://tldp.org/LDP/abs/html/ops.html)
+* [Comparison operators](http://tldp.org/LDP/abs/html/comparison-ops.html)
+* [File test operators](http://tldp.org/LDP/abs/html/fto.html)
+* [Make your scripts portable](https://www.cyberciti.biz/tips/finding-bash-perl-python-portably-using-env.html)
