@@ -12,7 +12,7 @@ while [ $HOUR -lt 14 ];do
 		then
 			echo "Hour: $HOUR"
 		fi
-		let COUNTER=1
+		let COUNTER=0
 		let HOUR=HOUR+1
 	fi
 done
