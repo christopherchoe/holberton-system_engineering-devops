@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # prints out branched user oriented format, all users processes
-ps -u -H -a
+ps -e -u -H -a
