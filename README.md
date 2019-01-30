@@ -12,7 +12,7 @@
 * [Reading Man Pages](http://linuxcommand.org/lc3_man_pages/man1.html)
 * [Keyboard shortcuts for Bash](https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/) 
 * [LTS](https://wiki.ubuntu.com/LTS)
-* [Shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29)
+*( [Shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29)
 
 * man or help: cd, ls, pwd, less, file, ln, cp, mv, rm, mkdir, type, which, help, man
 
@@ -47,3 +47,9 @@
 * [Comparison operators](http://tldp.org/LDP/abs/html/comparison-ops.html)
 * [File test operators](http://tldp.org/LDP/abs/html/fto.html)
 * [Make your scripts portable](https://www.cyberciti.biz/tips/finding-bash-perl-python-portably-using-env.html)
+
+### 0x05. Processes and signals
+* [Linux PID](http://www.linfo.org/pid.html)
+* [Linux process](https://www.thegeekstuff.com/2012/03/linux-processes-environment/)
+* [Linux signal](https://www.thegeekstuff.com/2012/03/linux-signals-fundamentals/)
+
