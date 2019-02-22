@@ -12,17 +12,13 @@
 * [Reading Man Pages](http://linuxcommand.org/lc3_man_pages/man1.html)
 * [Keyboard shortcuts for Bash](https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/) 
 * [LTS](https://wiki.ubuntu.com/LTS)
-*( [Shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29)
-
+* [Shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29)
 * man or help: cd, ls, pwd, less, file, ln, cp, mv, rm, mkdir, type, which, help, man
-
 * Project that deals with getting familiar with navigating, creating, and maniuplating files in shell.
 
 ### 0x01. Shell, permissions
 * [Permissions](http://linuxcommand.org/lc3_lts0010.php) from Learning the Shell.
-
 * man: chmod, sudo, su, chown, chgrp, id, groups, whoami, adduser, useradd, addgroup and previously learned commands.
-
 * Work involving the basics of grant permissions and working with owners and identifiers in shell.
 
 ### 0x02. Shell, I/O Redirections and filters
@@ -52,4 +48,10 @@
 * [Linux PID](http://www.linfo.org/pid.html)
 * [Linux process](https://www.thegeekstuff.com/2012/03/linux-processes-environment/)
 * [Linux signal](https://www.thegeekstuff.com/2012/03/linux-signals-fundamentals/)
+
+### 0x06. Regular Expression
+
+### 0x07. Networking basics #0
+
+### 0x08. Networking basics #1
 
