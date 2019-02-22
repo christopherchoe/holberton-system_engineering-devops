@@ -1,11 +1,11 @@
 # Regular Expressions
---
+---
 ## Description
 
 This project in the System engineering & DevOps series is about:
 
-[RegEx the Basics](https://www.slideshare.net/neha_jain/introducing-regular-expressions)
-[RegEx advanced](https://www.slideshare.net/neha_jain/advanced-regular-expressions-80296518)
+* [RegEx the Basics](https://www.slideshare.net/neha_jain/introducing-regular-expressions)
+* [RegEx advanced](https://www.slideshare.net/neha_jain/advanced-regular-expressions-80296518)
 
 ---
 File|Task
