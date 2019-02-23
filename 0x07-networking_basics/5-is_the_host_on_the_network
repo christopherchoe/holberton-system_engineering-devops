@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# will ping a specified IP five times or display usage if no argument
 if [ $# -eq 0 ]
 then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# changes the ip address of localhost and facebook.com
+cp /etc/hosts ~/hosts.new
+printf "127.0.0.2\tlocalhost\n" > ~/hosts.new
+printf "8.8.8.8\tfacebook.com" >> ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
