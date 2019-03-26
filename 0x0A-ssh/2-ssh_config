@@ -1,5 +1,5 @@
-Host ubuntu@35.190.184.163
-	HostName 35.190.184.163
+Host ubuntu@35.243.252.23
+	HostName 35.243.252.23
 	User ubuntu
 	IdentityFile ~/.ssh/holberton
 	PasswordAuthentication no
