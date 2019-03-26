@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# transfers a file from client to server
+if [ "$4" == "" ]; then
+	echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+else
+	CP_CMD='scp -o StrictHostKeyChecking=no '
+	CP_CMD+=$1
+	CP_CMD+=' '
+	CP_CMD+="$3@$2:~/"
+	ssh "$3"@"$2" -i "$4" "$CP_CMD"
+fi
