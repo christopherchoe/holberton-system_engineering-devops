@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# install nginx, redirects
+apt-get -y update
+apt-get -y install nginx
+echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/404.html
+
+service nginx restart
