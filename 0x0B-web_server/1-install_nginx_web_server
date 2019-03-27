@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 # install nginx, listens on port 80
 apt-get -y update
 apt-get -y install nginx
