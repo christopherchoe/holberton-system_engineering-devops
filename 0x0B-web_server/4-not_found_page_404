@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# install nginx, redirects
-apt-get -y update
-apt-get -y install nginx
+# install nginx, redirects 404
+sudo apt-get -y update
+sudo apt-get -y install nginx
 echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/404.html
-
-service nginx restart
+sudo sed -i "/^}/i error_page 404 /404.html;" /etc/nginx/sites-enabled/default
+sudo sed -i "/^}/i location = /404.html {\n\t\troot /usr/share/nginx/html;\n}" /etc/nginx/sites-enabled/default
+sudo service nginx restart
