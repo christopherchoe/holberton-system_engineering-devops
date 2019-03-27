@@ -7,3 +7,4 @@ echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
 replace="server_name localhost;\nrewrite ^/redirect_me$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n"
 sed -i "s|server_name localhost;|$replace|" /etc/nginx/sites-available/default
 service nginx start
+service nginx reload
