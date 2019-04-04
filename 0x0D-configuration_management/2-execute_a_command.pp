@@ -1,5 +1,5 @@
 # executes pkill on killmenow
 exec { 'pkill -f killmenow':
-  cwd     => '/home',
-  path    => '/usr/bin'
+  cwd  => '/home',
+  path => '/usr/bin'
 }
