@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# sets up the haproxy load balancer
+sudo apt-get -y install software-properties-common
+sudo add-apt-repository ppa:vbernat/haproxy-1.8
+sudo apt-get -y update
+sudo apt-get -y install haproxy=1.8.\*
+sudo sed -i '$ a\ ENABLED=1' /etc/default/haproxy
+echo "frontend web-front" | sudo tee -a /etc/haproxy/haproxy.cfg
+echo "	bind *:80" | sudo tee -a /etc/haproxy/haproxy.cfg
+echo "	mode http" | sudo tee -a /etc/haproxy/haproxy.cfg
+echo "	default_backend web-backend" | sudo tee -a /etc/haproxy/haproxy.cfg
+echo "" | sudo tee -a /etc/haproxy/haproxy.cfg
+echo "backend web-backend" | sudo tee -a /etc/haproxy/haproxy.cfg
+echo "	balance roundrobin" | sudo tee -a /etc/haproxy/haproxy.cfg
+echo "	mode http" | sudo tee -a /etc/haproxy/haproxy.cfg
+echo "	server web2 35.196.70.29:80 check" | sudo tee -a /etc/haproxy/haproxy.cfg
+echo "	server web2 34.73.105.249:80 check" | sudo tee -a /etc/haproxy/haproxy.cfg
+sudo service haproxy start
