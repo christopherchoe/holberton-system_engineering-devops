@@ -2,7 +2,7 @@
 # sets up ufw
 sudo apt-get -y update
 sudo apt-get -y install ufw
-sudo ufw default allow outoing
+sudo ufw default allow outgoing
 sudo ufw default deny incoming
 sudo ufw allow 22/tcp
 sudo ufw allow 80/tcp
