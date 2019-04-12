@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# runs whoami as an input user
+adduser -gecos "$1"
+sudo -u "$1" whoami
