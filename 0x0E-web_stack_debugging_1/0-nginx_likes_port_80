@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# fixes nginx port 8080 default issue
+sudo apt-get -y install curl
+sed -i -e 's/enabled/available/g' /etc/nginx/nginx.conf
+sudo service nginx restart

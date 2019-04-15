@@ -55,3 +55,14 @@
 
 ### 0x08. Networking basics #1
 
+### 0x0A. SSH
+
+### 0x0B.
+
+### 0x0C.
+
+### 0x0D. Configuration Management
+
+### 0x0E. Web Debugging #1
+
+### 0x0F. Load Balancer

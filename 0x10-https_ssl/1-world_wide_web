@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# prints sub domain record dtype and destination
+
+
+funcy () {
+	if [ -z "$2" ]
+	then
+		SUB=("www" "lb-01" "web-01" "web-02")
+	else
+		SUB=("$2")
+	fi
+	for i in "${SUB[@]}"
+	do
+		dig "$i"."$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk -v i=$i '{ print "The subdomain " i " is a " $4 " record and points to " $5 }'
+	done
+}
+
+if [ -z "$2" ]
+then
+	funcy "$1"
+else
+	funcy "$1" "$2"
+fi

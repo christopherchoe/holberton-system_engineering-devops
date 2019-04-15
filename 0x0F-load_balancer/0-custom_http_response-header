@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# install nginx, redirects
+sudo apt-get -y update
+sudo apt-get -y install nginx
+text="\t\tadd_header X-Served-By \$hostname;\n\t"
+sudo sed -i "/http {/a \  $text" /etc/nginx/nginx.conf
+sudo service nginx restart
