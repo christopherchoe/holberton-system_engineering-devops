@@ -57,12 +57,20 @@
 
 ### 0x0A. SSH
 
-### 0x0B.
+### 0x0B. Web Server
 
-### 0x0C.
+### 0x0C. Web Stack Debugging #0
 
 ### 0x0D. Configuration Management
 
 ### 0x0E. Web Debugging #1
 
 ### 0x0F. Load Balancer
+
+### 0x10. https ssl
+
+### 0x12. Web Stack Debugging #2
+
+### 0x13. Firewall
+
+### 0x14. MySQL
