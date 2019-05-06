@@ -19,7 +19,8 @@ if __name__ == "__main__":
             '{}/todos?userId={}'.format(api_url, employee_id))
         with open('{}.csv'.format(employee_id), mode='w') as f:
             fieldnames = ['id', 'username', 'completed', 'title']
-            writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
+            writer = csv.DictWriter(
+                f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
             for i in todos.json():
                 writer.writerow({
                         'id': employee_id,
