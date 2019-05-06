@@ -5,6 +5,7 @@ also exporting data in the CSV format
 """
 import requests
 from sys import argv
+import csv
 
 
 if __name__ == "__main__":
@@ -14,13 +15,16 @@ if __name__ == "__main__":
         users = requests.get(
             '{}/users/{}'.format(api_url, employee_id))
         name = users.json()['username']
-        formatted_csv = '"{}","{}",'.format(employee_id, name)
         todos = requests.get(
             '{}/todos?userId={}'.format(api_url, employee_id))
-        csv_return = ""
-        for i in todos.json():
-            csv_return += '{}"{}","{}"\n'.format(
-                formatted_csv, i['completed'], i['title'])
-        print(csv_return[:-1])
+        with open('{}.csv'.format(employee_id), mode='w') as f:
+            fieldnames = ['id', 'username', 'completed', 'title']
+            writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
+            for i in todos.json():
+                writer.writerow({
+                        'id': employee_id,
+                        'username': name,
+                        'completed': i['completed'],
+                        'title': i['title']})
     except:
         pass
