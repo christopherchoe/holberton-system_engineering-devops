@@ -21,7 +21,7 @@ if __name__ == "__main__":
         for i in todos.json():
             if i['completed'] is True:
                 done_tasks += 1
-                done_titles += "\n\t{}".format(i['title'])
+                done_titles += "\n\t {}".format(i['title'])
         print('Employee {} is done with tasks({}/{}):{}'.format(
             name, done_tasks, total_tasks, done_titles))
     except:
