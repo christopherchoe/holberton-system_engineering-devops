@@ -3,18 +3,18 @@
 Script returns information about TODO list for a given employee
 also exporting data in the CSV format
 """
-import requests
-from sys import argv
 import csv
+import requests
+import sys
 
 
 if __name__ == "__main__":
     try:
-        employee_id = int(argv[1])
+        employee_id = int(sys.argv[1])
         api_url = 'https://jsonplaceholder.typicode.com'
         users = requests.get(
             '{}/users/{}'.format(api_url, employee_id))
-        name = users.json()['username']
+        name = users.json().get('username')
         todos = requests.get(
             '{}/todos?userId={}'.format(api_url, employee_id))
         with open('{}.csv'.format(employee_id), mode='w') as f:
@@ -25,7 +25,7 @@ if __name__ == "__main__":
                 writer.writerow({
                         'id': employee_id,
                         'username': name,
-                        'completed': i['completed'],
-                        'title': i['title']})
+                        'completed': i.get('completed'),
+                        'title': i.get('title')})
     except:
         pass
