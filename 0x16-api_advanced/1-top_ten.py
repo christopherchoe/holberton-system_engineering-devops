@@ -14,9 +14,9 @@ def top_ten(subreddit):
     """
     headers = {'User-Agent': 'Holberton Student 329'}
     check_url = 'https://reddit.com/api/search_reddit_names.json'
-    params = {'query': subreddit}
+    params = {'query': subreddit, 'exact': True}
     check = requests.get(check_url, headers=headers, params=params)
-    if len(check.json()['names']) is 0:
+    if check.status_code != 200:
         print(None)
         return
     url = 'https://reddit.com/r/{}/top/.json'.format(subreddit)
