@@ -16,7 +16,6 @@ def top_ten(subreddit):
     check_url = 'https://reddit.com/api/search_reddit_names.json'
     params = {'query': subreddit}
     check = requests.get(check_url, headers=headers, params=params)
-    print(check.json())
     if len(check.json()['names']) is 0:
         print(None)
         return
