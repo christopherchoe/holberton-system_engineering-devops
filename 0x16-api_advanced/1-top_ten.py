@@ -21,9 +21,6 @@ def top_ten(subreddit):
         return
     url = 'https://reddit.com/r/{}/top/.json'.format(subreddit)
     sr = requests.get(url, headers=headers)
-    if sr.status_code != 200 or sr.json().get('data').get('children') is None:
-        print(None)
-        return
     hot_posts = sr.json().get('data').get('children')
     i = 0
     while i < len(hot_posts) and i < 10:
