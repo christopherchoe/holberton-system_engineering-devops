@@ -80,3 +80,5 @@
 ### 0x16. API Advanced
 
 ### 0x17. Web Stack Debugging #3
+
+### 0x18. Webstack Monitoring
