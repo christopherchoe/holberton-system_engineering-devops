@@ -82,3 +82,5 @@
 ### 0x17. Web Stack Debugging #3
 
 ### 0x18. Webstack Monitoring
+
+### 0x1A. Application server
