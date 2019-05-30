@@ -1,3 +1,3 @@
 exec { 'modify_file':
-  command => "/bin/rm /etc/default/nginx; /usr/bin/service nginx restart",
+  command => '/bin/echo "ULIMIT=\"-n 1500\"" > /etc/default/nginx; /usr/bin/service nginx restart',
 }
